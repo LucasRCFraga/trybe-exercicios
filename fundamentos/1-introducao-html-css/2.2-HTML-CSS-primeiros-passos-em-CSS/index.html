@@ -1,0 +1,113 @@
+<!-- EXERCICIO 1
+
+Modifique o tamanho do h1 para 65 pixels;
+
+Modifique a cor do texto do h1 para laranja;
+
+Modifique a cor de fundo da lista não ordenada;
+
+Crie uma classe para modificar a cor de fundo da tag p e da ul ao mesmo tempo. -->
+
+<!-- EXERCICIO 2 
+    
+Modifique o font-family do h1 para sans-serif;
+
+Deixe o parágrafo com o font-weight 600;
+
+Modifique o font-size do body para 16px;
+
+Coloque o tamanho do parágrafo com o tamanho de 3 vezes o padrão do body;
+
+Explore as propriedades font-style, line-height, text-align e text-decoration;
+
+Troque a cor de fundo de cada item da lista para a cor correspondente ao texto.
+
+ -->
+
+<!-- EXERCICIO 3
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <style>
+        
+        h1 {
+            color: orange;
+            font-family: sans-serif;
+            font-size: 65px;
+        }
+
+        h2{
+            font-size: 2em;
+        }
+
+        body {
+            background-color: lightcoral;
+            font-size: 16px;
+        }
+
+        #maca {
+            background-color: plum;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            color: lightblue;
+            font-style: italic;
+            line-height: 40px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .list{
+            text-align: center;
+            line-height: 30px;
+            text-decoration: solid;
+            font-weight: bold;
+            color: gray;
+            background-color: lightgray;
+        }
+
+        #amarelo{
+            background-color: yellow;
+        }
+
+        #vermelho{
+            background-color: red;
+        }
+
+        #marrom{
+            background-color: brown;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Frutas</h1>
+    <p class="list">Qual é a sua fruta favorita?</p>
+    <ul class="list">
+      <li id="maca">Maçã</li>
+      <li>Banana</li>
+      <li>Goiaba</li>
+    </ul>
+    <br>
+
+    <h1>Cores</h1>
+    <p>Qual é a sua cor favorita?</p>
+    <ul class="list">
+      <li id="amarelo">Amarelo</li>
+      <li id="vermelho">Vermelho</li>
+      <li id="marrom">Marrom</li>
+    </ul>
+    
+  </body>
+
+</html>
