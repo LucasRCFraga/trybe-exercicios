@@ -1,0 +1,26 @@
+body {
+    max-width: 90%;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.first{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second, .third{
+    display: inline-block;
+    width: 45%;
+}
+
+.premiacao {
+    text-align: center;
+}
+
+.premiacao li{
+    display: inline;
+}
