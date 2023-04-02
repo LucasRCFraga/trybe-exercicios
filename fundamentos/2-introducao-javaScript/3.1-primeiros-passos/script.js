@@ -46,6 +46,8 @@ if(d > 0){
 
 // Ponto 4 finalizado;
 
+// PONTO 5 COM FOQUETE
+
 let q = 80;
 let w = 77;
 let e = 92;
@@ -80,4 +82,58 @@ if(checkTri){
 // }
 
 // Ponto 5 finalizado;
+
+let peca;
+
+switch(peca){
+
+    case 'rei':
+        console.log('Rei-> Uma casa apenas para qualquer direção.'); 
+        break;
+
+    case 'bispo':
+        console.log('Bispo-> Diagonal.'); 
+        break;
+
+    case 'rainha':
+        console.log('Rainha-> Diagonal, horizontal e vertical.'); 
+        break;
+
+    case 'cavalo':
+        console.log('Cavalo -> "L" pode pular sobre as peças.'); 
+        break;
+
+    case 'torre':
+        console.log('Torre -> Horizontal e vertical.'); 
+        break;
+
+    case 'peão':
+        console.log("Peão -> Apenas uma casa para frente, no primeiro movimento podem ser duas casas.");
+        break;
+    default:
+        console.log('Erro, peça inválida');
+
+}
+
+// Ponto 6 finalizado, ajuda do gabarito para achar como cada peça de Xadrez se movimenta
+
+let nota;
+
+if (nota < 0 || nota > 100){
+    console.log('Nota incorreta');
+} else if(nota >= 90){
+    console.log('Nota A');
+}else if(nota >= 80){
+    console.log('Nota B');
+}else if(nota >= 70){
+    console.log('Nota C');
+}else if(nota >= 60){
+    console.log('Nota D');
+} else if (nota >= 50){
+    console.log('Nota E');
+} else{
+    console.log('Nota F')
+}
+
+// Ponto 7 finalizado
 
