@@ -46,7 +46,14 @@ if(d > 0){
 
 // Ponto 4 finalizado;
 
-// PONTO 5 COM FOQUETE
+// PONTO 5 COM FOGUETE
+//
+// Utilize if/else para escrever um código que defina três variáveis 
+// com os valores dos três ângulos internos de um triângulo. Retorne
+// true se os ângulos representarem os ângulos de um 
+// triângulo e false, caso contrário. Se algum ângulo for inválido, 
+// você deve retornar uma mensagem de erro.
+
 
 let q = 80;
 let w = 77;
@@ -136,4 +143,33 @@ if (nota < 0 || nota > 100){
 }
 
 // Ponto 7 finalizado
+
+// PONTO 8 COM FOGUETE
+//
+// Utilize if/else para escrever um código que defina três números
+// em variáveis e retorne true se pelo menos uma das três for par.
+// Caso contrário, o código deve retornar false.
+
+let i = 3;
+let o = 5;
+let p = 6;
+
+if (i % 2 === 0 || o % 2 === 0 || p % 2 === 0){
+    console.log('True');
+} else {
+    console.log('False');
+}
+
+// Ponto 8 finalizado
+
+let j = 2;
+let k = 4;
+let l = 9;
+
+if (j % 2 !== 0 || k % 2 !== 0 || l % 2 !== 0){
+    console.log('True');
+} else{
+    console.log('False');
+}
+
 
