@@ -1,16 +1,36 @@
 const createItem = require('../src/createItem');
 
 describe('a função createItem', () => {
-  it.todo('cria um item válido');
+  const arr = ['bola', 2, 14.24, 55];
+  const expected = { name: 'banana', unit: 'kg', price: 1.99, quantity: 20 };
+  const n = 'banana';
+  const u = 'kg'
+  const p = 1.99;
+  const q = 20;
 
-  it.todo('utiliza zero como quantidade padrão');
+  it('cria um item válido', () => {
+    expect(createItem(n,u,p,q)).toBe(expected);
+  });
 
-  it.todo('Lança um erro quando não recebe parâmetros');
-
-  it.todo('Lança um erro se o nome do item não é uma string');
-
-  it.todo('Lança um erro se o preço é negativo');
-
-  it.todo('Lança um erro se o preço é zero');
+  it('utiliza zero como quantidade padrão', () => {
+    expect(createItem(n,u,p)).toHaveProperty('quantity', 0);
+  });
   
+
+  it('Lança um erro quando não recebe parâmetros', () => {
+    expect(() => createItem()).toThrow();
+  });
+
+//   it('Lança um erro se o nome do item não é uma string', () => {
+//     expect(createItem(23,u,p,q)).toThrow();
+//   });
+
+//   it('Lança um erro se o preço é negativo', () => {
+//     expect(createItem(n,u,p,q)).toBe(expected);
+//   });
+
+//   it('Lança um erro se o preço é zero', () => {
+//     expect(createItem(n,u,p,q)).toBe(expected);
+//   });
+
 });
