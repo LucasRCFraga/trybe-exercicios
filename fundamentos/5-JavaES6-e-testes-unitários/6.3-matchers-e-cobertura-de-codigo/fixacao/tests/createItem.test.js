@@ -1,3 +1,4 @@
+const { error } = require('console');
 const createItem = require('../src/createItem');
 
 describe('a função createItem', () => {
@@ -8,28 +9,28 @@ describe('a função createItem', () => {
   const p = 1.99;
   const q = 20;
 
-  it('cria um item válido', () => {
-    expect(createItem(n,u,p,q)).toBe(expected);
+  it('1- cria um item válido', () => {
+    expect(createItem(n,u,p,q)).toEqual(expected);
   });
 
-  it('utiliza zero como quantidade padrão', () => {
+  it('2- utiliza zero como quantidade padrão', () => {
     expect(createItem(n,u,p)).toHaveProperty('quantity', 0);
   });
   
 
-  it('Lança um erro quando não recebe parâmetros', () => {
+  it('3- Lança um erro quando não recebe parâmetros', () => {
     expect(() => createItem()).toThrow();
   });
 
-//   it('Lança um erro se o nome do item não é uma string', () => {
-//     expect(createItem(23,u,p,q)).toThrow();
-//   });
+  it('4- Lança um erro se o nome do item não é uma string', () => {
+    expect(() => createItem(23,u,p,q)).toThrowError('O nome do item deve ser uma string');
+  });
 
-//   it('Lança um erro se o preço é negativo', () => {
-//     expect(createItem(n,u,p,q)).toBe(expected);
-//   });
+  it('5- Lança um erro se o preço é negativo', () => {
+    expect(() => createItem(n,u,-3,q)).toThrow(Error);
+  });
 
-//   it('Lança um erro se o preço é zero', () => {
+//   it('6- Lança um erro se o preço é zero', () => {
 //     expect(createItem(n,u,p,q)).toBe(expected);
 //   });
 
