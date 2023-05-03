@@ -30,8 +30,8 @@ describe('a função createItem', () => {
     expect(() => createItem(n,u,-3,q)).toThrow(Error);
   });
 
-//   it('6- Lança um erro se o preço é zero', () => {
-//     expect(createItem(n,u,p,q)).toBe(expected);
-//   });
+  it('6- Lança um erro se o preço é zero', () => {
+    expect(() => createItem(n,u,0,q)).toBe(expected);
+  });
 
 });
