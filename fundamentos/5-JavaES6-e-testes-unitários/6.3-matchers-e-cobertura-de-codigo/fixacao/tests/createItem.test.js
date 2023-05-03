@@ -31,7 +31,7 @@ describe('a função createItem', () => {
   });
 
   it('6- Lança um erro se o preço é zero', () => {
-    expect(() => createItem(n,u,0,q)).toBe(expected);
+    expect(() => createItem(n,u,0,q)).toThrowError('O preço do item deve ser maior que zero');
   });
 
 });
