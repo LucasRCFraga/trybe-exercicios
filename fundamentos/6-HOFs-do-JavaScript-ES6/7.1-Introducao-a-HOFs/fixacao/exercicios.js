@@ -12,3 +12,13 @@ const names = ['João', 'Irene', 'Fernando', 'Maria'];
 
 const nfind = names.find((name) => name.length === 5);
 
+// Utilize o find para encontrar a música com id igual a '31031685', caso ela exista:
+
+const musicas = [
+    { id: '31031686', title: 'Toccata and Fugue, BWV 565' },
+    { id: '31031687', title: 'Chaconne, Partita No. 2 BWV 1004' },
+    { id: '31031685', title: 'Partita in C moll BWV 997' },
+];
+  
+const musicasF = musicas.find((find) => find.id === '31031685');
+
