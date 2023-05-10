@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "description": "",
+  "dependencies": {
+    "jest": "^29.5.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.1"
+  }
+}
