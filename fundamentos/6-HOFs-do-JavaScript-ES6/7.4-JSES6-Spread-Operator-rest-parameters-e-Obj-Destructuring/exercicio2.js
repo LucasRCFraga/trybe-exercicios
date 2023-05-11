@@ -4,9 +4,6 @@
  * a função dessa forma : sum(4,5,6), o número 15 deve ser retornado.
  */
 
-
-
-// escreva sum abaixo
 const sum  = (...item) => item.reduce((acc, curr) => acc + curr);
 
 console.log(sum(4,5,6));
