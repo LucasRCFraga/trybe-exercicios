@@ -23,6 +23,8 @@ const ships = [
   // measurementUnit: unidade de medida
 ];
   
+// * Bem simples de se fazer uma vez que eu entendi que posso por no parametro o Obj destructuring
+
 // escreva shipLength abaixo
 const shipLength = ({ name, length, measurementUnit }) => `${name} is ${length} ${measurementUnit} long`;
   
