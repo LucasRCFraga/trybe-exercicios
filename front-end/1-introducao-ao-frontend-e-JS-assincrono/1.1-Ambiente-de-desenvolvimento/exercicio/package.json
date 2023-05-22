@@ -1,0 +1,17 @@
+{
+  "name": "1.1-ambiente-de-desenvolvimento",
+  "version": "1.0.0",
+  "description": "Validador de Campos",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas RC Fraga",
+  "license": "ISC",
+  "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.11.2",
+    "validator.js": "^2.0.4",
+    "vite": "^4.3.8"
+  }
+}
