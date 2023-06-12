@@ -1,0 +1,29 @@
+{
+  "hash": "ec3028e1",
+  "browserHash": "663446f5",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "c7f28dd9",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "2f72b281",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "aa74f90d",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-UGRPGISR": {
+      "file": "chunk-UGRPGISR.js"
+    }
+  }
+}
