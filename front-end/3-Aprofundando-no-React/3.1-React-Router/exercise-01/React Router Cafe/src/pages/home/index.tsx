@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <h1>Home page</h1>
-      <Link to='/cofees'>
+      <Link to='/coffees'>
         <button>Conheça nossos produtos</button>
       </Link>
     </>

@@ -1,6 +1,11 @@
+import Component from "../../component";
+
 function CoffeeList() {
     return (
-        <h1>CoffeeList page</h1>
+        <>
+            <h1>CoffeeList page</h1>
+            <Component/>
+        </>
     )
 }
   
